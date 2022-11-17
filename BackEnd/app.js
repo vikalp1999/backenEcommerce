@@ -27,11 +27,11 @@ app.use("/api/v",user);
 app.use("/api/v",order)
 app.use("/api/v",payment)
 
-app.use(express.static(path.join(__dirname, "../FrontEND")));
+// app.use(express.static(path.join(__dirname, "../FrontEND")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../FrontEND/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../FrontEND/build/index.html"));
+// });
 
 //Middleware for error
 app.use(errorMiddleware)
